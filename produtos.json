@@ -1,0 +1,209 @@
+[
+  {
+    "Produto": "Livro Grampo (canoa)",
+    "Tamanho": "14x21",
+    "Campo": "Shrink",
+    "Opção": "Sem Shrink",
+    "Preço Fixo": "-",
+    "Preço/Unidade": "R$ 25,50",
+    "Preço/Página": "-"
+  },
+  {
+    "Produto": "Livro Grampo (canoa)",
+    "Tamanho": "14x21",
+    "Campo": "Shrink",
+    "Opção": "Com Shrink",
+    "Preço Fixo": "-",
+    "Preço/Unidade": "R$ 28,00",
+    "Preço/Página": "-"
+  },
+  {
+    "Produto": "Livro Grampo (canoa)",
+    "Tamanho": "A4",
+    "Campo": "Shrink",
+    "Opção": "Sem Shrink",
+    "Preço Fixo": "-",
+    "Preço/Unidade": "R$ 32,00",
+    "Preço/Página": "-"
+  },
+  {
+    "Produto": "Livro Grampo (canoa)",
+    "Tamanho": "A4",
+    "Campo": "Shrink",
+    "Opção": "Com Shrink",
+    "Preço Fixo": "-",
+    "Preço/Unidade": "R$ 35,50",
+    "Preço/Página": "-"
+  },
+  {
+    "Produto": "Revista Grampo",
+    "Tamanho": "14x21",
+    "Campo": "Capa",
+    "Opção": "Capa Comum",
+    "Preço Fixo": "-",
+    "Preço/Unidade": "R$ 45,00",
+    "Preço/Página": "R$ 0,15"
+  },
+  {
+    "Produto": "Revista Grampo",
+    "Tamanho": "14x21",
+    "Campo": "Capa",
+    "Opção": "Capa Premium",
+    "Preço Fixo": "-",
+    "Preço/Unidade": "R$ 52,00",
+    "Preço/Página": "R$ 0,18"
+  },
+  {
+    "Produto": "Revista Grampo",
+    "Tamanho": "A4",
+    "Campo": "Capa",
+    "Opção": "Capa Comum",
+    "Preço Fixo": "-",
+    "Preço/Unidade": "R$ 58,00",
+    "Preço/Página": "R$ 0,20"
+  },
+  {
+    "Produto": "Revista Grampo",
+    "Tamanho": "A4",
+    "Campo": "Capa",
+    "Opção": "Capa Premium",
+    "Preço Fixo": "-",
+    "Preço/Unidade": "R$ 65,00",
+    "Preço/Página": "R$ 0,23"
+  },
+  {
+    "Produto": "Caderno Espiral",
+    "Tamanho": "A5",
+    "Campo": "Acabamento",
+    "Opção": "Simples",
+    "Preço Fixo": "R$ 18,50",
+    "Preço/Unidade": "-",
+    "Preço/Página": "-"
+  },
+  {
+    "Produto": "Caderno Espiral",
+    "Tamanho": "A5",
+    "Campo": "Acabamento",
+    "Opção": "Premium",
+    "Preço Fixo": "R$ 24,00",
+    "Preço/Unidade": "-",
+    "Preço/Página": "-"
+  },
+  {
+    "Produto": "Caderno Espiral",
+    "Tamanho": "A4",
+    "Campo": "Acabamento",
+    "Opção": "Simples",
+    "Preço Fixo": "R$ 22,00",
+    "Preço/Unidade": "-",
+    "Preço/Página": "-"
+  },
+  {
+    "Produto": "Caderno Espiral",
+    "Tamanho": "A4",
+    "Campo": "Acabamento",
+    "Opção": "Premium",
+    "Preço Fixo": "R$ 28,50",
+    "Preço/Unidade": "-",
+    "Preço/Página": "-"
+  },
+  {
+    "Produto": "Cartão de Visita",
+    "Tamanho": "9x5cm",
+    "Campo": "Papel",
+    "Opção": "Papel Comum",
+    "Preço Fixo": "R$ 35,00",
+    "Preço/Unidade": "-",
+    "Preço/Página": "-"
+  },
+  {
+    "Produto": "Cartão de Visita",
+    "Tamanho": "9x5cm",
+    "Campo": "Papel",
+    "Opção": "Papel Premium",
+    "Preço Fixo": "R$ 48,00",
+    "Preço/Unidade": "-",
+    "Preço/Página": "-"
+  },
+  {
+    "Produto": "Cartão de Visita",
+    "Tamanho": "9x5cm",
+    "Campo": "Papel",
+    "Opção": "Papel Fosco",
+    "Preço Fixo": "R$ 55,00",
+    "Preço/Unidade": "-",
+    "Preço/Página": "-"
+  },
+  {
+    "Produto": "Banner",
+    "Tamanho": "120x80cm",
+    "Campo": "Material",
+    "Opção": "Lona",
+    "Preço Fixo": "R$ 85,00",
+    "Preço/Unidade": "-",
+    "Preço/Página": "-"
+  },
+  {
+    "Produto": "Banner",
+    "Tamanho": "120x80cm",
+    "Campo": "Material",
+    "Opção": "Vinil",
+    "Preço Fixo": "R$ 95,00",
+    "Preço/Unidade": "-",
+    "Preço/Página": "-"
+  },
+  {
+    "Produto": "Banner",
+    "Tamanho": "200x80cm",
+    "Campo": "Material",
+    "Opção": "Lona",
+    "Preço Fixo": "R$ 125,00",
+    "Preço/Unidade": "-",
+    "Preço/Página": "-"
+  },
+  {
+    "Produto": "Banner",
+    "Tamanho": "200x80cm",
+    "Campo": "Material",
+    "Opção": "Vinil",
+    "Preço Fixo": "R$ 145,00",
+    "Preço/Unidade": "-",
+    "Preço/Página": "-"
+  },
+  {
+    "Produto": "Flyer",
+    "Tamanho": "A5",
+    "Campo": "Acabamento",
+    "Opção": "Sem Verniz",
+    "Preço Fixo": "-",
+    "Preço/Unidade": "R$ 0,25",
+    "Preço/Página": "-"
+  },
+  {
+    "Produto": "Flyer",
+    "Tamanho": "A5",
+    "Campo": "Acabamento",
+    "Opção": "Com Verniz",
+    "Preço Fixo": "-",
+    "Preço/Unidade": "R$ 0,35",
+    "Preço/Página": "-"
+  },
+  {
+    "Produto": "Flyer",
+    "Tamanho": "A4",
+    "Campo": "Acabamento",
+    "Opção": "Sem Verniz",
+    "Preço Fixo": "-",
+    "Preço/Unidade": "R$ 0,40",
+    "Preço/Página": "-"
+  },
+  {
+    "Produto": "Flyer",
+    "Tamanho": "A4",
+    "Campo": "Acabamento",
+    "Opção": "Com Verniz",
+    "Preço Fixo": "-",
+    "Preço/Unidade": "R$ 0,55",
+    "Preço/Página": "-"
+  }
+]
