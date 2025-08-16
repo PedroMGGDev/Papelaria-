@@ -10,14 +10,9 @@ from openai import OpenAI
 from models import db, CustomerSession, ConversationLog
 from flask import Flask
 
-app = Flask(__name__)
 
-@app.route("/")
-def home():
-    return "Hello, Vercel!"
 
-if __name__ == "__main__":
-    app.run()
+
 # Configure logging for debugging
 logging.basicConfig(level=logging.DEBUG)
 

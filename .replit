@@ -1,0 +1,8 @@
+modules = ["python-3.11", "nodejs-20", "web"]
+
+[nix]
+channel = "stable-25_05"
+
+[[ports]]
+localPort = 5000
+externalPort = 80
