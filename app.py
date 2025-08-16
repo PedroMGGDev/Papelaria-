@@ -179,8 +179,12 @@ def generate_pix(nome, cpf, valor, descricao):
         }
         
         logging.info(f"Generating PIX for {nome}, CPF: {cpf}, Value: R$ {valor}")
+        logging.info(f"Request payload: {payload}")
         
         response = requests.post(url, json=payload, headers=headers, timeout=30)
+        
+        logging.info(f"Response status: {response.status_code}")
+        logging.info(f"Response content: {response.text}")
         
         if response.status_code == 200:
             result = response.json()
@@ -195,14 +199,20 @@ def generate_pix(nome, cpf, valor, descricao):
             logging.error(f"PIX generation failed: {response.status_code} - {response.text}")
             return {
                 "success": False,
-                "error": f"Erro na API: {response.status_code}"
+                "error": f"Erro na API: {response.status_code}. Tente novamente ou entre em contato."
             }
             
+    except requests.exceptions.RequestException as e:
+        logging.error(f"Request error generating PIX: {e}")
+        return {
+            "success": False,
+            "error": "Erro de conexão com a API. Tente novamente ou entre em contato."
+        }
     except Exception as e:
         logging.error(f"Error generating PIX: {e}")
         return {
             "success": False,
-            "error": str(e)
+            "error": "Erro interno. Tente novamente ou entre em contato."
         }
 
 def get_or_create_customer_session(session_id):
@@ -759,6 +769,9 @@ def create_pix():
             if field not in data:
                 return jsonify({"error": f"Campo obrigatório: {field}"}), 400
         
+        # Add billingType if not present
+        billing_type = data.get('billingType', 'pix')
+        
         result = generate_pix(
             nome=data['name'],
             cpf=data['cpfCnpj'],
@@ -766,11 +779,17 @@ def create_pix():
             descricao=data['description']
         )
         
-        return jsonify(result)
+        if result.get('success'):
+            return jsonify(result)
+        else:
+            return jsonify(result), 503
         
     except Exception as e:
         logging.error(f"Error in PIX endpoint: {e}")
-        return jsonify({"error": str(e)}), 500
+        return jsonify({
+            "success": False,
+            "error": "Erro interno do servidor. Tente novamente."
+        }), 500
 
 @app.route('/reset', methods=['POST'])
 def reset_conversation():
@@ -779,6 +798,23 @@ def reset_conversation():
     session['customer_data'] = {}
     session.modified = True
     return jsonify({"success": True})
+
+@app.route('/test-pix', methods=['POST'])
+def test_pix():
+    """Test PIX generation endpoint"""
+    try:
+        result = generate_pix(
+            nome="Cliente Teste",
+            cpf="36259795005", 
+            valor=120.00,
+            descricao="Pagamento do produto"
+        )
+        return jsonify(result)
+    except Exception as e:
+        return jsonify({
+            "success": False,
+            "error": str(e)
+        }), 500
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
