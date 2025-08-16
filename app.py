@@ -14,7 +14,7 @@ from flask import Flask
 
 
 # Configure logging for debugging
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.INFO)
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -816,5 +816,6 @@ def test_pix():
             "error": str(e)
         }), 500
 
+# Vercel will handle the server startup
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=False)
